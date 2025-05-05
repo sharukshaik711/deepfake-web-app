@@ -3,5 +3,5 @@ services:
     name: deepfake-web-app
     env: python
     plan: free
-    buildCommand: pip install -r requirements.txt
+    buildCommand: cd . && pip install -r requirements.txt
     startCommand: python web_app/app.py
