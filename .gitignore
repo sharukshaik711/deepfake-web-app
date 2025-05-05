@@ -1,15 +1,19 @@
-# Ignore virtual environments
-venv/
-tf_gpu/
-_pycache_/
-*.pyc
-
-# Ignore model weights and large files
+# Ignore large files and folders
+*.h5
 *.pth
 *.dll
 *.lib
-*.mp4
-*.avi
-*.mov
-*.mkv
+*.pyd
+
+# Python cache
+_pycache_/
+*.pyc
+
+# Virtual environments
+venv*/
+env*/
+
+# Temporary or unnecessary folders
 uploads/
+data/
+processed/
