@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for
 from werkzeug.utils import secure_filename
 import os
-from predict import predict_video
+from web_app.predict import predict_video
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'uploads'
