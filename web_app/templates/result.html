@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result - Deep</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction Result</h1>
+        <p><strong>Video:</strong> {{ filename }}</p>
+        <p><strong>Prediction:</strong> {{ prediction }}</p>
+        <p><strong>Confidence:</strong> {{ confidence }}</p>
+        <p><strong>Frames Processed:</strong> {{ frames }}</p>
+        <a href="{{ url_for('index') }}">Analyze Another Video</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Deep - Detect Deepfakes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Deep</h1>
+        <p>Upload a video to check for deepfakes</p>
+        <form action="{{ url_for('upload') }}" method="post" enctype="multipart/form-data">
+            <input type="file" name="video" required>
+            <button type="submit">Analyze</button>
+        </form>
+    </div>
+</body>
+</html>
