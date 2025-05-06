@@ -1,6 +1,5 @@
 # Ignore large files and folders
 *.h5
-*.pth
 *.dll
 *.lib
 *.pyd
@@ -17,4 +16,3 @@ env*/
 uploads/
 data/
 processed/
-web_app/
